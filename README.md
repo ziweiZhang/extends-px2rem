@@ -137,7 +137,7 @@ add options:
 
 ### 0.5.0
 
-*clone from [px2rem](https://github.com/songsiqi/px2rem)
+* clone from [px2rem](https://github.com/songsiqi/px2rem)
 
 ## License
 
