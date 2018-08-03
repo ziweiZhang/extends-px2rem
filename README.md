@@ -1,26 +1,12 @@
-# px2rem
+# extends-px2rem
 
 According to one stylesheet, generate rem version and @1x, @2x and @3x stylesheet.
-
-[![NPM version][npm-image]][npm-url]
-[![Build status][travis-image]][travis-url]
-[![Test coverage][coveralls-image]][coveralls-url]
-[![Downloads][downloads-image]][downloads-url]
-
-[npm-image]: https://img.shields.io/npm/v/px2rem.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/px2rem
-[travis-image]: https://img.shields.io/travis/songsiqi/px2rem.svg?style=flat-square
-[travis-url]: https://travis-ci.org/songsiqi/px2rem
-[coveralls-image]: https://img.shields.io/coveralls/songsiqi/px2rem.svg?style=flat-square
-[coveralls-url]: https://coveralls.io/r/songsiqi/px2rem
-[downloads-image]: http://img.shields.io/npm/dm/px2rem.svg?style=flat-square
-[downloads-url]: https://npmjs.org/package/px2rem
 
 This set of tools contains:
 
 * a CLI tool
 * [gulp plugin](https://www.npmjs.com/package/gulp-px3rem)
-* [webpack loader](https://www.npmjs.com/package/px2rem-loader)
+* [webpack loader](https://www.npmjs.com/package/extends-px2rem-loader)
 * [postcss plugin](https://www.npmjs.com/package/postcss-px2rem)
 
 ## Usage
@@ -59,7 +45,7 @@ $ px2rem -o build src/*.css
 ### API
 
 ```
-var Px2rem = require('px2rem');
+var Px2rem = require('extends-px2rem');
 var px2remIns = new Px2rem([config]);
 var originCssText = '...';
 var dpr = 2;
@@ -142,32 +128,16 @@ Rem version: `test.debug.css`
 
 comment hook + css parser
 
-## Change Log
+## Change Log  
+  
+### 0.6.0  
+add options: 
+- keepValue  
+- keepProperty
 
 ### 0.5.0
 
-* Support Animation keyframes (no `/*px*/` comment).
-
-### 0.4.2
-
-* The generated [data-dpr] rules follow the origin rule, no longer placed at the end of the whole style sheet.
-* Optimize 0px, do not generate 3 [data-dpr] rules.
-
-### 0.3.1
-
-* Change default remUnit to 75.
-* Delete comment config.
-* Don't generate @1x, @2x and @3x version stylesheet by default.
-
-### 0.2.2
-
-* Support media query.
-
-### 0.1.8
-
-* Fix cli option duplication bug.
-* Fix regular expression bug.
-* Fix common comments bug which affects rem transformation.
+*clone from [px2rem](https://github.com/songsiqi/px2rem)
 
 ## License
 
