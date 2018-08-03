@@ -21,7 +21,7 @@ The raw stylesheet only contains @2x style, and if you
 ### CLI tool
 
 ```
-$ npm install -g px2rem
+$ npm install -g extends-px2rem
 ```
 ```
 $ px2rem -o build src/*.css
