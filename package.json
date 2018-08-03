@@ -2,11 +2,11 @@
   "name": "px2rem",
   "description": "According to one stylesheet, generate rem version and @1x, @2x and @3x stylesheet",
   "version": "0.6.0",
-  "homepage": "https://github.com/ziweiZhang/px2rem",
+  "homepage": "https://github.com/ziweiZhang/extends-px2rem",
   "author": "ziweiZhang <zhangziweiwz@qq.com>",
   "repository": {
     "type": "git",
-    "url": "git@github.com:ziweiZhang/px2rem.git"
+    "url": "git@github.com:ziweiZhang/extends-px2rem.git"
   },
   "dependencies": {
     "css": "~2.2.0",
